@@ -1,0 +1,363 @@
+/* startet med at kode den 14-12-2021 
+her starter koden for mobil versionen. 
+den første del er header der kommer til at gå igen på alle sider  */
+:root {
+    --font-color: #f2f2f2;
+    --box-color: #A67A61;
+    --png-drop: drop-shadow(5px 7px 20px #222);
+    --text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.700);
+}
+
+body {
+    background-image: linear-gradient(#f2f2f2, #14808c, #14808c, #14808c, #085158, black);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    padding: 20px;
+}
+
+.navigat a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #f2f2f2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.top-line {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+    color: #f2f2f2;
+    text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.700);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.navigat {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+    color: #f2f2f2;
+    text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.700);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* her slutter koden der er på alle sider */
+
+/* her starter koden for forsiden mobil version startet d. 14-12-2021 */
+
+h1 {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f2f2f2;
+    text-shadow: 0px 7px 20px rgba(0, 0, 0, 0.700);
+    font-size: 78px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.hexagon-projects img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(5px 7px 20px #222);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* her slutter koden for forsiden på mobil version lavet den14-12-2021 */
+
+/* her starter koden for footer på mobil version */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer img {
+    width: 70%;
+
+}
+
+/* her slutter footer lavet den 14-12-2021 */
+
+/* her starter koden for plantasia startet den 14-12-2021 */
+.hexagon img {
+    width: 100%;
+    filter: var(--png-drop);
+}
+
+.showcase img {
+    width: 40%;
+    padding: 15px;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-box {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #A67A61;
+    padding: 40px;
+    color: var(--font-color);
+    box-shadow: var(--text-shadow);
+    font-size: 20px;
+}
+
+.float-text {
+    font-family: all-round-gothic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--font-color);
+    text-shadow: 5px 7px 20px rgba(0, 0, 0, 0.700);
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+.h-mobil-style {
+    font-size: 70px;
+}
+
+.room {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.foto img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.smaller {
+    font-size: 55px;
+}
+
+/* herfra starter min code til website */
+
+@media screen and (min-width: 768px) {
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .logo {
+        grid-column: 3/4;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    .navigat {
+        grid-column: 4/6;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .top-line {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .hexagon-projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1.2fr 1fr 1.2fr 1fr 1fr 1fr;
+        grid-column-gap: 35px;
+        grid-row-gap: 20px;
+    }
+
+
+    #hex1 {
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+
+    #hex2 {
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+
+    #hex3 {
+        grid-column: 5/7;
+        grid-row: 1/4;
+    }
+
+    #hex4 {
+        grid-column: 2/4;
+        grid-row: 3/6;
+    }
+
+    #hex5 {
+        grid-column: 4/6;
+        grid-row: 3/6;
+    }
+
+    #hex6 {
+        grid-column: 1/3;
+        grid-row: 5/8;
+    }
+
+    #hex7 {
+        grid-column: 3/5;
+        grid-row: 5/8;
+    }
+
+    #hex8 {
+        grid-column: 5/7;
+        grid-row: 5/8;
+    }
+
+    .plant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto 1fr;
+        grid-gap: 40px;
+
+    }
+
+    .text-box {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 25px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    .blomst {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+
+    .blomst img {
+        padding: 50px;
+    }
+
+    h1 {
+        grid-column: 1/3;
+    }
+
+    .ftb {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    .ftb2 {
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+
+    .flower {
+        grid-row: 5/6;
+        grid-column: 1/3;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+
+    .float-text {
+        font-size: 200%;
+
+    }
+
+    .firstplant {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .plant-site {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 30px;
+        margin-top: 80px;
+    }
+
+    .sec-hex {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .stb {
+        grid-column: 2/3;
+    }
+
+    .stb2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .plant-site iframe {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .big-foto {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        width: 100%;
+        grid-gap: 30px;
+    }
+
+    .top-text {
+        grid-column: 1/3;
+    }
+
+    .plant iframe {
+        justify-content: space-evenly;
+    }
+
+
+
+
+}
